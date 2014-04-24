@@ -1,0 +1,7 @@
+%tr
+  %td.name
+    = charge.customer.name
+  %td.amount
+    = money(charge.amount)
+  %td.created
+    = charge.created_at.to_s(:long)

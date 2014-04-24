@@ -1,0 +1,15 @@
+- title 'Charges'
+
+%h3 Charges
+
+%h4 Successful
+%table.successful
+  = render partial: 'charge', collection: @charges.successful
+
+%h4 Failed
+%table.failed
+  = render partial: 'charge', collection: @charges.failed
+
+%h4 Disputed
+%table.disputed
+  = render partial: 'charge', collection: @charges.disputed
